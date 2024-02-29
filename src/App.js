@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from './components/section/Button';
+import InputSection from './components/section/Input';
+import ButtonSection from './components/section/Button';
 
 function App() {
   return (
     <div>
-      <Button />
+      <ButtonSection />
+      <InputSection />
     </div>
   );
 }

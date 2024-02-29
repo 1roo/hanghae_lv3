@@ -2,10 +2,11 @@ import React from "react";
 import styled, { css } from "styled-components";
 
 
-const BasicButton = ({ children, ...restProps }) => {
+const BasicButton = ({ children, icon, ...restProps }) => {
     return (
         <StyledButton {...restProps}>
             {children}
+            {icon}
         </StyledButton>
     );
 };
@@ -54,6 +55,7 @@ const StyledButton = styled.button`
     cursor: pointer;
     border: none;
     border-radius: 10px;
+    margin-right: 10px;
 
     background-color: ${({ background }) => background};
     color: ${({ color }) => color};
@@ -87,6 +89,10 @@ const StyledButton = styled.button`
 
     &:active {
         background-color: ${({ active }) => active};
+    }
+
+    svg {
+        color: black;
     }
 
 
