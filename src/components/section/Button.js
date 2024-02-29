@@ -34,7 +34,7 @@ const ButtonSection = () => {
                     size="large"
                     bordered
                     icon={<HiOutlineBell />}
-                    onClick={() => window.alert("버튼을 만들어보세요")}>
+                    onClick={() => console.log(window.prompt('어렵습니까?'))}>
                     Large Primary Button
                 </Button.Negative>
                 <Button.Negative

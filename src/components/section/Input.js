@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Name, Price } from "../styled/Input";
+import Input from "../styled/Input";
 import Button from "../styled/Button";
 import Common from "../styled/Common";
 import styled from "styled-components";
@@ -37,14 +37,14 @@ const InputSection = () => {
                 <Common>
                     <MarginDiv>
                         <label>이름</label>
-                        <Name
+                        <Input.Name
                             getValues={(v) => setInput((prev) => ({ ...prev, name: v }))}
                         />
                     </MarginDiv>
                     
                     <MarginDiv>
                         <label>가격</label>
-                        <Price
+                        <Input.Price
                             getValues={(v) => setInput((prev) => ({ ...prev, price: v.original }))}
                         />
                     </MarginDiv>

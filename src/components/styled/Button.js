@@ -1,7 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
-
 const BasicButton = ({ children, icon, ...restProps }) => {
     return (
         <StyledButton {...restProps}>
@@ -10,8 +9,6 @@ const BasicButton = ({ children, icon, ...restProps }) => {
         </StyledButton>
     );
 };
-
-////////////////////////////////////////////////////////////////////////
 
 
 const PrimaryButton = (props) => {
@@ -37,18 +34,12 @@ const NegativeButton = (props) => {
     );
 };
 
-
-///////////////////////////////////////////////////////////////
-
 const Primary = PrimaryButton;
-const Negative = NegativeButton;
-
-const Button = { Negative, Primary };
+const Negative = NegativeButton
+const Button = {Primary, Negative};
 
 export default Button;
 
-
-///////////////////////////////////////////////////////////////////
 
 const StyledButton = styled.button`
     
@@ -106,7 +97,7 @@ const StyledButton = styled.button`
                 &:active {
                     background-color: rgb(238, 238, 238);
                 }
-                `;
+            `;
         }
     }}
 `;

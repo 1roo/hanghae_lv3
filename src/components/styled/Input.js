@@ -47,7 +47,9 @@ const PriceInput = ({ getValues }) => {
 const Price = PriceInput;
 const Name = NameInput;
 
-export { Price, Name };
+const Input = {Name, Price};
+
+export default Input;
 
 
 const StyledInput = styled.input`
