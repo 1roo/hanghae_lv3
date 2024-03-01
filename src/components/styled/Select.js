@@ -112,6 +112,7 @@ background-color: #fff;
 width: 300px;
 position: absolute;
 top: 650px;
+left: 10px;
 `;
 
 export const SelectOption = styled(OptionSelect)`
